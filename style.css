@@ -1,0 +1,39 @@
+.container {
+  text-align: center;
+  margin-top: 100px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+input {
+  padding: 10px;
+  margin: 10px;
+  width: 300px;
+}
+
+input{
+    background-color: whitesmoke;
+    height: 48px;
+    border: none;
+    border-bottom: 2px solid silver;
+    /* 下面的会覆盖上面的步伐 */
+    outline: none;
+    font-size: 12px;
+}
+
+
+button {
+  padding: 10px 20px;
+  font-size: 16px;
+  margin: 10px;
+}
+
+body{
+    background: url(./wallpaper.jpg) no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

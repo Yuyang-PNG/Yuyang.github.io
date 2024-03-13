@@ -1,0 +1,131 @@
+ /*去内外边距，并 内边距   边框  自动內减 */
+ * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* 版心 */
+.wrapper {
+    width: 1200px;
+    margin: 0 auto;
+}
+.qingchufudong{
+    /* 清除浮动 */
+    overflow: hidden;
+}
+.clearfix:before,.clearfix:after {
+    content:"";
+    display:table; 
+  }
+  .clearfix:after {
+    clear:both;
+  }
+
+body{
+    background-color: rgb(247, 243, 243);
+
+}
+.nav-bg {
+    height: 200px;
+    background-color: rgb(247, 243, 243);
+}
+
+.nav {
+    height: 200px;
+    background-color: white;
+    border-bottom: 1px black solid;
+}
+
+/* 去掉链接下划线 */
+a {
+    text-decoration: none;
+}
+
+/* 去掉  无序列表的黑点 */
+li {
+    list-style: none;
+}
+
+/* 后代选择器 */
+.nav li a {
+    color: black;
+    font-size: 42px;
+}
+
+.nav li {
+    float: left;
+    width: 208px;
+    height: 90px;
+    margin: 56px 46px;
+    text-align: center;
+    line-height: 80px;
+}
+
+.nav li:hover {
+    width: 208px;
+    height: 90px;
+    /* background-color: aqua; */
+    border-bottom: 4px blue solid;
+
+}
+
+.banner {
+    /* height: 600px; */
+    margin-top: 15px;
+    /* background-color: pink; */
+}
+
+.banner li {
+    float: left;
+    list-style: none;
+    width: 228px;
+    /* height: 290px; */
+    /* background-color: aqua; */
+    margin-bottom: 15px;
+    margin-right: 15px;
+}
+
+.banner li:nth-child(5n) {
+    margin-right: 0px;
+    /* background-color: blue; */
+}
+
+.banner li a span {
+    margin: 32px;
+    color: black;
+
+}
+/* hr{
+    color: red;
+} */
+/* 网页底部 */
+.foot{
+    height: 500px;
+    /* background-color: pink; */
+    margin-top: 15px;
+}
+.foot .foot-div{
+    float: left;
+    width:392px;
+    height: 500px;
+    /* background-color: aqua; */
+    margin-right: 12px;
+
+}
+.foot .foot-div:nth-child(3n){
+    margin-right: 0px;
+    /* background-color: blue; */
+}
+.foot .foot-div li{
+    width: 392px;
+    height: 70px;
+    /* background-color: blueviolet; */
+    margin:10px 0px;
+    text-align: center;
+    line-height: 100px;
+    font-size: 32px;
+}
+.foot .foot-div li:hover{
+    color: red;
+}

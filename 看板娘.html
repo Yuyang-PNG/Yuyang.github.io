@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>看板娘示例</title>
+    <style>
+        #waifu {
+            position: fixed;
+            bottom: 0;
+            right: 0;
+            width: 200px;
+            z-index: 9999;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <h1>欢迎来到我的网页！</h1>
+    <div id="waifu">
+        <img src="看板娘图片链接" alt="看板娘">
+    </div>
+
+    <script>
+        var waifu = document.getElementById("waifu");
+        waifu.addEventListener("click", function() {
+            // 在此处添加看板娘的交互逻辑
+        });
+    </script>
+</body>
+</html>

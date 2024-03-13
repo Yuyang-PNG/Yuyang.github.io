@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta content="text/html" charset="UTF-8">
+		<title>视频</title>
+		<link rel="icon" href="./视频网站/图片/6.jpg" sizes="24x24">
+	   <style>
+	   
+	   /* 定义一个固定位置的无样式列表 */
+	   .ul {
+		   list-style-type: none;
+		   margin: 0;
+		   padding: 0;
+		   width: 8%;
+		   background-color: #f1f1f1;
+		   position: fixed;
+		   height: 100%;
+		   overflow: auto;
+	   }
+	   
+	   /* 定义列表项中的链接样式，包括颜色、填充和文本装饰 */
+	   .li a {
+		   display: block;
+		   color: #000;
+		   padding: 10px 16px;
+		   text-decoration: none;
+	   }
+	   
+	   /* 定义当前激活的链接样式，包括背景颜色和文字颜色 */
+	   .ul li a.active {
+		   background-color: #4CAF50;
+		   color: white;
+	   }
+	   
+	   /* 定义未激活且鼠标悬停的链接样式，包括背景颜色和文字颜色 */
+	   .ul li a:hover:not(.active) {
+		   background-color: #555;
+		   color: white;
+	   }
+	   
+	   /* 定义表格样式，包括边框颜色、外边距、填充和高度 */
+	   .table1 {
+		   border-color: aliceblue;
+		   margin-left:12%;
+		   padding:1px 80px;
+		   height:1px;
+	   }
+	   
+	   /* 定义所有元素的默认样式，包括外边距和填充，并设置盒子模型为 border-box */
+	   * {
+		   margin: 0%;
+		   padding: 0%;
+		   box-sizing: border-box;
+	   }
+	   
+	   /* 定义背景颜色和填充的样式 */
+	   .b {
+		   background-color: #f1f1f1;
+		   padding: 30px;
+	   }
+	   
+	   /* 定义链接样式，包括文字装饰、轮廓和颜色 */
+	   a {
+		   text-decoration: none;
+		   outline: none;
+		   color: #000;
+	   }
+	   
+	   /* 定义另一个表格样式，包括边框颜色、外边距、填充、高度和宽度 */
+	   .table2 {
+		   border-color: aliceblue;
+		   margin-left:2%;
+		   padding:10px 20px;
+		   height:10px;
+		   width: 8%;
+	   }
+	   
+	   /* 定义另一种背景颜色和填充的样式 */
+	   .b1 {
+		   background-color: #f1f1f1;
+		   padding: 20px;
+	   }
+	   
+	   /* 定义div的外边距样式 */
+	   .div {
+		   margin: 0 0 0 132px;
+	   }
+	   
+	   .div a.active{
+		   background-color: #4CAF50;
+		   color: white;
+	   }
+	   
+	   .div a:hover:not(.active){
+		   background-color: #555;
+		   color: white;
+	   }
+	   
+	   </style>
+
+		</head>
+<body>
+			
+<div>
+   <!-- 创建一个div元素，用于包含下面的导航栏 -->
+   <ul class="ul">
+	   <!-- 创建一个无序列表，用于展示导航栏的各个选项 -->
+	   <li class="li"><a href="主页.html">主页</a></li>
+	   <!-- 创建一个列表项，包含一个链接，链接到"主页.html" -->
+	   <li class="li"><a href="新闻.html">新闻</a></li>
+	   <!-- 创建一个列表项，包含一个链接，链接到"新闻.html" -->
+	   <li class="li"><a href="联系.html">联系</a></li>
+	   <!-- 创建一个列表项，包含一个链接，链接到"联系.html" -->
+	   <li class="li"><a href="#about">关于</a></li>
+	   <!-- 创建一个列表项，包含一个链接，链接到页面内的"about"位置 -->
+	   <li class="li"><a class="active">视频</a></li>
+	   <!-- 创建一个列表项，包含一个链接，链接文本为"视频"，该链接当前处于激活状态 -->
+	   <li class="li"><a href="音乐.html">音乐</a></li>
+	   <!-- 创建一个列表项，包含一个链接，链接到"音乐.html" -->
+   </ul>
+</div>
+	
+</body>
+		
+<body>
+
+<br>		
+<div>
+   <!-- 主div -->
+   <div>
+	   <div class="div">
+		   <!-- 子div -->
+		   <table class="table1">
+			   <tr>
+				   <td class="b">
+					   <span><b>类型:</b></span>
+						   <!-- 电影类型列表 -->
+						   <a href="#">全部</a>
+						   <a href="#">爱情</a>
+						   <a href="#">科幻</a>
+						   <a href="#">喜剧</a>
+						   <a href="#">奇幻</a>
+						   <a href="#">冒险</a>
+						   <a href="#">剧情</a>
+						   <a href="#">战争</a>
+						   <a href="#">动作</a>
+						   <a href="#">悬疑</a>
+						   <a href="#">恐怖</a>
+						   <a href="#">情色</a>
+						   <a href="#">犯罪</a>
+						   <a href="#">惊悚</a>
+						   <a href="#">运动</a>
+						   <a href="#">历史</a>
+						   <a href="#">家庭</a>
+						   <a href="#">音乐</a>
+						   <a href="#">同性</a>
+					   <!-- 下拉菜单 -->
+					   <select onchange="window.location=this.value;">
+						   <option value="" selected>请选择更多类型</option>
+						   <option value=""></option>
+						   <option value=""></option>
+						   <option value=""></option>
+						   <option value=""></option>
+						   <option value=""></option>
+						   <option value=""></option>
+						   <option value=""></option>
+					   </select>
+				   <td>
+			   <tr>
+		   </table>
+	   </div>
+   </div>
+<br>
+   <div class="div">
+	   <table class="table1">
+		   <tr>
+			   <td class="b">
+				   <span><b>时间:</b></span>
+				   <!-- 电影年份列表 -->
+				   <a href="">2024</a>
+				   <a href="">2023</a>
+				   <a href="">2022</a>
+				   <a href="">2021</a>
+				   <a href="">2020</a>
+				   <a href="">2019</a>
+				   <a href="">2018</a>
+				   <a href="">2017</a>
+				   <a href="">2016</a>
+				   <a href="">2015</a>
+				   <a href="">2014</a>
+				   <a href="">2013</a>
+				   <a href="">2012</a>
+				   <a href="">2011</a>
+				   <a href="">2010</a>
+				   <a href="">2009</a>
+				   <a href="">2008</a>
+				   <a href="">2007</a>
+				   <!-- 下拉菜单 -->
+				   <select onchange="window.location=this.value;">
+					   <option value="" selected>请选择更多时间</option>
+					   <option value="404.html">2006</option>
+					   <option value="">2005</option>
+					   <option value="">2004</option>
+					   <option value="">2003</option>
+					   <option value="">2002</option>
+					   <option value="">2001</option>
+					   <option value="">2000</option>
+					   <option value="">1999</option>
+					   <option value="">1998</option>
+					   <option value="">1997</option>
+					   <option value="">1996</option>
+					   <option value="">1995</option>
+					   <option value="">1994</option>
+					   <option value="">1993</option>
+					   <option value="">1992</option>
+					   <option value="">1991</option>
+					   <option value="">1990</option>
+				   </select>
+			   <td>
+		   <tr>
+	   </table>
+   </div>
+</div>
+<br><br>
+</body>
+
+
+<body>
+
+<div>
+   <!-- 引入样式表 -->
+   <link rel="stylesheet" href="./43浮动案例.css">
+   <!-- 创建一个banner区域，包含一组视频链接 -->
+   <div class="banner wrapper clearfix">
+	   <ul>
+		   <!-- 创建一个视频链接 -->
+		   <li><a href="./视频网站/机巧少女不会受伤/机巧少女不会受伤第一集.html">
+		   <!-- 在链接中包含一个图片和一个文本描述 -->
+		   <img src="./视频网站/图片/3.bmp" alt="机巧少女不会受伤" width="200px" >
+		   <span>机巧少女不会受伤</span></a></li>
+		   <!-- 创建其他视频链接 -->
+		   <li><a href="./视频网站/文豪野犬 第五季.html">
+		   <img src="./视频网站/图片/2c88c2ad2f63b9a9e84b10d5d89755bc.jpg" alt="文豪野犬 第五季" width="200px" >
+		   <span>文豪野犬 第五季</span></a></li>
+		   <li><a href="./视频网站/漆黑的子弹/漆黑的子弹第一集.html">
+		   <img src="./视频网站/图片/R-C.jpg" alt="漆黑的子弹" width="220px" >
+		   <span>漆黑的子弹</span></a></li>
+		   <li><a href="./视频网站/关于我转生变成史莱姆这档事 红莲之绊篇/关于我转生变成史莱姆这档事 红莲之绊篇.html">
+		   <img src="./视频网站/图片/cover.jpg" alt="关于我转生变成史莱姆这档事 红莲之绊篇" width="230px" >
+		   <span>关于我转生变成史莱姆这档事 红莲之绊篇</span></a></li>
+		   <li><a href="./视频网站/破晓传说.html">
+		   <img src="./视频网站/图片/-220626130K5543.jpg" alt="破晓传说" width="250px" >
+		   <span>破晓传说</span></a></li>
+		   <li><a href="./视频网站/关于我转生变成史莱姆这档事/关于我转生变成史莱姆这档事第一集.html">
+		   <img src="./视频网站/图片/ws_2565506497_thumb.bmp" alt="" width="220px" >
+		   <span>转生史莱姆这档事</span></a></li>
+		   <!-- 创建一些未完成的视频链接 -->
+		   <li><a href="#">
+		   <img src="./视频网站/图片/cebf39e76730b8b6.jpg" alt="" width="200px" >
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <li><a href="./视频网站/高校舰队/高校舰队第一集.html">
+		   <img src="./视频网站/图片/t0111eb79640322f06b.png" alt="高校舰队" width="200px " >
+		   <span>高校舰队</span><br><span>HTML网页设计</span></a></li>
+		   <li><a href="">
+		   <img src="./视频网站/图片/8ad866aa1371920e3368365aaf71e482.png" alt="" width="230px" >
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <li><a href="./视频网站/百武装战记/百武装战记第一集.html">
+		   <img src="./视频网站/图片/8164e73b29dc704937f1f764a2302540.png" alt="" width="230px" >
+		   <span>百武装战记</span><br><span>HTML网页设计</span></a></li>
+		   <li><a href="./视频网站/高达创形者 再起/高达创形者 再起第一集.html">
+		   <img src="./视频网站/图片/BMjAyMzEyMjMwMTA2MzlfMzU1MjQxODI5Nl8xMjAzMTQ1OTkxMzhfMF8z_ccc_B7dd20cbd3c2fa5d5de0c19d0637d3250.jpg" alt="高达创形者 再起" width="200px" >
+		   <span>高达创形者 再起</span><br><span>HTML网页设计</span></a></li>
+		   <li><a href="./视频网站/对不起，我是警察.html">
+		   <img src="./视频网站/图片/a3263c4214b7f909b1ca711f751ca53ea7374c6d.jpg" alt="对不起，我是警察" width="220px" >
+		   <span>对不起，我是警察</span></a></li>
+		   <!-- 创建一些未完成的视频链接 -->
+		   <li><a href="./视频网站/第二次被异世界召唤/第二次被异世界召唤第一集.html">
+		   <img src="./视频网站/图片/100.jpg" alt="" width="220px" >
+		   <span>第二次被异世界召唤</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视频链接 -->
+		   <li><a href="#">
+		   <img src="./视频网站/图片/OIP-C (3).png" alt="" width="220px" >
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视频链接 -->
+		   <li><a href="#">
+		   <img src="./视频网站/图片/202401121705073419.png" alt="" width="240px" >
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视频链接 -->
+		   <li><a href="#">
+		   <img src="./视频网站/图片/e19fff14882ef107dda49cfb7db913f29f247a6a.jpg@942w_1338h_progressive.webp.jpg" alt="" width="220px" >
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视频链接 -->
+		   <li><a href="#">
+		   <img src="./视频网站/图片/7dd98d1001e93901213fa97829bb43e736d12f2e3864.jpg" alt="" width="220px" >
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./视频网站/图片/u=3926544040,3421132228&fm=253&app=138&f=JPEG&fmt=auto&q=75.jpg" alt="" width="220px" >
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./视频网站/图片/7dd98d1001e93901213fa97829bb43e736d12f2e3864.jpg" alt="" width="220px" >
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+		   <li><a href="#">
+		   <img src="./course08.png" alt="">
+		   <span>前端技术</span><br><span>HTML网页设计</span></a></li>
+		   <!-- 其他未完成的视 -->
+
+	    </ul>
+	</div>
+</div>
+
+</body>
+</html>
