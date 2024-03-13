@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>主页</title>
+<link rel="icon" href="./图片/6.jpg" sizes="24x24">
+<style>
+	
+body {
+    margin: 0;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 8%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+}
+
+li a {
+    display: block;
+    color: #000;
+    padding: 10px 16px;
+    text-decoration: none;
+}
+
+li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+*{
+    user-select: none;
+    /* 无法选中，整体感更强 */
+	margin: 0%;
+	padding: 0%;
+}
+
+p {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+svg {
+	margin:0 0 0 14px;
+}
+
+</style>
+
+<script src="js/背景.js"></script>
+ 
+<body>
+
+<ul>
+  <li><a class="active">主页</a></li>
+  <li><a href="新闻.html">新闻</a></li>
+  <li><a href="联系.html">联系</a></li>
+  <li><a href="#about">关于</a></li>
+  <li><a href="video.html">视频</a></li>
+  <li><a href="音乐.html">音乐</a></li>
+</ul>
+<br>
+
+<script src="js/vue.js"></script>
+    <link rel="stylesheet">
+    <style>
+        .sousuo {
+            margin: 75px 600px;	//上边距/左边距
+            text-align: center;
+        }
+
+        input {
+            outline-style: none;
+            border: 1px solid #ccc;
+            border-radius: 30px;
+            padding: 13px 14px;
+            width: 500px;
+            height: 20px;
+            font-size: 14px;
+            font-family: "Microsoft soft";
+			margin: -20px;
+        }
+
+        .ipt {
+            float: left;
+        }
+
+        .btn {
+            float: left;
+        }
+
+        button {
+            background: none;
+            border: none;
+            margin-left: -50px;
+            margin-top: -5px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+	
+<body>
+    <div id="app">
+        <div class="sousuo">
+            <div class="ipt">
+                <input type="text" name="" id="content" placeholder="破晓传说/文豪野犬/关于我转生变成史莱姆这档事/漆黑的子弹/苍蓝钢铁">
+            </div>
+            <!-- <input type="button" name="" id="search"> -->
+            <div class="btn">
+                <button onclick="toHtml()">
+                    <svg t="1637644951499" class="icon" viewBox="0 0 1024 1024" version="1.1"
+                        xmlns="http://www.w3.org/2000/svg" p-id="2455" width="36px" height="36px"> //与下移与左移
+                        <path
+                            d="M425.9 144.9c38.1 0 75 7.4 109.6 22.1 33.5 14.2 63.7 34.5 89.6 60.4 25.9 25.9 46.2 56 60.4 89.6 14.7 34.7 22.1 71.6 22.1 109.6s-7.4 75-22.1 109.6c-14.2 33.5-34.5 63.7-60.4 89.6-25.9 25.9-56 46.2-89.6 60.4-34.7 14.7-71.6 22.1-109.6 22.1s-75-7.4-109.6-22.1c-33.5-14.2-63.7-34.5-89.6-60.4-25.9-25.9-46.2-56-60.4-89.6-14.7-34.7-22.1-71.6-22.1-109.6s7.4-75 22.1-109.6c14.2-33.5 34.5-63.7 60.4-89.6 25.9-25.9 56-46.2 89.6-60.4 34.7-14.6 71.6-22.1 109.6-22.1m0-80c-199.8 0-361.7 161.9-361.7 361.7s161.9 361.7 361.7 361.7 361.7-161.9 361.7-361.7S625.7 64.9 425.9 64.9z"
+                            fill="#2C2C2C" p-id="2456"></path>
+                        <path
+                            d="M715.3 654l226.3 226.3c15.6 15.6 15.6 40.9 0 56.6-15.6 15.6-40.9 15.6-56.6 0L658.7 710.6c-15.6-15.6-15.6-40.9 0-56.6 15.6-15.6 41-15.6 56.6 0z"
+                            fill="#5ABE64" p-id="2457"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+		</div>
+		
+    <script src="js/探索.js"></script>
+	
+<br>
+<br>
+
+<div style="margin-left:12%;padding:1px 80px;height:1000px;">
+  <h1>动漫</h1>
+  <br>
+  <h2>精华语句</h2>
+  <b><p>1，秒速五厘米</p></b>
+到底要以怎样的速度生活，才能与你再次相遇。心疼的时候其实连身体都会感到强烈的疼痛。我清楚地知道，我们无法保证将来能永远在一起，横亘在我们面前的是那沉重的人生和漫长的时间，让人望而却步。——《秒速5厘米》
+</p>
+  <b><p>2，千与千寻</p></b>
+曾经发生过的事情不可能忘记，只不过是想不起而已。我不知道离别的滋味是这样凄凉，我不知道说声再见要这么坚强。不管前方的路有多苦，只要走的方向正确，不管多么崎岖不平，都比站在原地更接近幸福。——《千与千寻》</p>
+  <b><p>3，银魂</p></b>
+眼泪这东西啊，是流出来就能把辛酸和悲伤都冲走的好东西。可等你们长大成人了就会明白，人生还有眼泪也冲刷不干净的巨大悲伤，还有难忘的痛苦让你们即使想哭也不能流泪。所以真正坚强的人，都是越想哭反而笑得越大声，怀揣着痛苦和悲伤，即使如此也要带上它们笑着前行。——《银魂》</p>
+  <b><p>4，你的名字</p></b>
+你知道我的名字的时候我不认识你，我知道你的名字的时候你已经不在。头绳与口嚼酒背叛了时空，在夕阳下，我们的眼泪流过彼此的脸颊。——《你的名字》</p>
+  <b><p>5，哈尔的移动城堡</p></b>
+世界这么大，人生这么长，总会有这么一个人，让你想要温柔的对待。人哪有好的，只是坏的程度不一样而已。人老了，唯一的好处就是失去的东西少了。——《哈尔的移动城堡》
+</p>
+  <b><p>6，叛逆的鲁鲁修</p></b>
+一切都在我的意料之中，除了你。没有被杀的觉悟，就没有杀戮的资格。不管夜晚多么黑暗，黎明总是会到来。——《叛逆的鲁鲁修》
+</p>
+  <b><p>7，火影忍者</p></b>
+不相信自己的人，连努力的价值都没有。有思念你的人在的地方，就是你的归处。人就是这样，越是没有实力越爱说大话。世界上只有没有实力的人，才整天希望别人赞赏。——《火影忍者》</p>
+  <b><p>8，名侦探柯南</p></b>
+真相只有一个。因为我喜欢你，比世界上的任何一个人都喜欢你。我们会死很久，所以活着的时候一定要开心。——《名侦探柯南》</p>
+  <b><p>9，夏目友人帐</p></b>
+只要有想见的人，就不再是孤身一人了。我想成为一个温柔的人，因为曾被温柔的人那样对待，深深了解那种被温柔相待的感觉。我必须承认生命中大部分时光是属于孤独的，努力成长是在孤独里可以进行的最好的游戏。——《夏目友人帐》</p>
+  <b><p>10，灌篮高手</p></b>
+或许，青春本来就是不完满的吧。不到最后绝不轻言放弃，一旦放弃了，比赛也就结束了。教练，我想打篮球。——《灌篮高手》
+</p>
+  <b><p>11，妖精的尾巴</p></b>
+世界上也许有人喜欢孤独，但却没有人能承受孤独。若不想输给任何人，就得先认清自己的渺小。——《妖精的尾巴》</p>
+  <b><p>12，海贼王</p></b>
+不知所措，才是人生。我不管这个世上的人怎麽说我，我只想依照我的信念做事，绝不后悔，不管现在将来都一样。——《海贼王》</p>
+  <b><p>13，高达</p></b>
+谁都不知道将来会发生什么，因为不知道将来会发生什么，我们也只能做现在相信的事，事后如果知道错了，到那时候该哭的哭，该闹的闹，然后再考虑下一次。——《高达》</p>
+  <b><p>14，龙猫</p></b>
+如果把童年再放映一遍，我们一定会先大笑，然后放声痛哭，最后挂着泪，微笑着睡去。生活坏到一定程度就会好起来，因为它无法更坏。努力过后，才知道许多事情，坚持坚持，就过来了。人生就是一列开往坟墓的列车，路途上会有很多站，很难有人可以至始至终陪着走完，当陪 你的人要下车时，即使不舍，也该心存感激，然后挥手道别。——《龙猫》
+</p>
+  <b><p>15，死神</p></b>
+我手里拿着刀，没法抱你。我放下刀，没法保护你。如果爱，请深爱，千万不要松手；若不爱，请放开，千万不要回头。——《死神》</p>
+  <b><p>16，四月是你的谎言</p></b>
+你的所言所行，全都闪烁着光芒，太过刺目，于是我闭上双眼，但内心还是无法停止对你的憧憬。或许前路永夜，即便如此我也要前进，因为星光即使微弱也会为我照亮前途。——四月是你的谎言</p>
+  <b><p>17，虞美人盛开的山坡</p></b>
+尽管命运跟我们开了玩笑，尽管现实无法改变，我拥抱这命运，接受这现实，并仍旧喜欢着你。 多年后，再回想这样的迷茫或许连执著的原因都记不得了，青春就是让你张扬的笑，也给你莫名的痛。——虞美人盛开的山坡</p>
+  <b><h1>动漫明句</h1></b>
+  <h2>1,无职转生</h2>
+小说本篇
+第一卷
+眼前是悬崖。要往前踏出一步狠狠摔向地面，
+或者想裹足不前继续承受辱骂，都是你的自由。</p>
+<p>I do not want to work,whatever it may be said by whom.
+</p>
+<h4>第二卷</h4>
+<p>获得自由羽翼的人，将会失去双脚作为代价吧。</p>
+<p>It is difficult for inoccupation to attach a leg to the ground and to work.
+</p>
+<h4>第三卷</h4>
+<p>我能轻松办到的事情，你无法办到；</p>
+<p>你能轻松办到的事情，我无法办到。就只是这么一回事。</p>
+<p>Since working is very difficult,please do not say simply.</p>
+<h4>第四卷</h4>
+<p>人人不同，每个人都好；人人相同，那就更好。</p>
+<p>It will not be blameed if it can be the same as everybody.</p>
+<h4>第五卷</h4>
+<p>懂得败北滋味的人，是强者。</p>
+<p>The way of daring to become inoccupation.</p>
+<h4>第六卷</h4>
+<p>并非每个人，都能够活得自由自在。</p>
+<p>The moment hope could be seen,it is the easiest to be thrust down into hell.</p>
+<h4>第七卷</h4>
+<p>要在女人面前耍猴戏是无所谓，但是要被当猴子耍可就完全免谈。</p>
+<p>Two dimensions are most as expected.</p>
+<h4>第八卷</h4>
+<p>若想求苦，就往前行；如要寻乐，另去他方。</p>
+<p>True prosperity is ahead of the pain.</p>
+<h4>第九卷</h4>
+<p>即使被人摆布、嘲笑，仍然会有所收获。</p>
+<p>When having to exert oneself,I have that.<p>
+<h4>第十卷</h4>
+<p>结婚是人生的坟墓。</p>
+<p>Neet is zombie.</p>
+<h4>第十一卷</h4>
+<p>兄弟姊妹适合自己最接近，最相像，也是最难以理解的生物。</p>
+<p>When it coule be understood so,it'll be the best family.</p>
+<h4>第十二卷</h4>
+<p>残酷到让人无法正视的现实想必会到来。</p>
+<p>When my father dies and my mother has got ill,what should be made neatness?<p>
+<h4>第十三卷</h4>
+<p>把认定为多余并舍弃的事物再度捡回时，就会明白其价值。</p>
+<p>The person who abandoned his family has got the family who isn't deserted.</p>
+<h4>第十四卷</h4>
+<p>我没有在努力？是因为你的目标在其他地方，才会这么认为。</p>
+<p>It's because I'm looking for the place where I should aim at an unemployed one.</p>
+<h4>第十五卷</h4>
+<p>就算吃了败仗，人生还是得继续过下去。</p>
+<p>Defeat isn't shame.Compliance is significant.<p>
+<h4>第十六卷</h4>
+<p>与其辱骂，不如给予喝彩。</p>
+<p>People wish for the king who can shower cheer.</p>
+<h4>第十七卷</h4>
+<p>行动、言语以及金钱，有各式各样的事物会破坏信赖。</p>
+<p>The will which isn't broken maintains trust.</p>
+<h4>第十八卷</h4>
+<p>在这个世上，有些事能够原谅，有些事则无法饶恕。</p>
+<p>It's decided whether a person or doesn't permit.</p>
+<h4>第十九卷</h4>
+<p>我一辈子都无法和他互相理解。</p>
+<p>after died understand.</p>
+<h4>第二十卷</h4>
+<p>时间残酷。总是会要求我们做出选择。</p>
+<p>Time is gentle.Always make us choose.</p>
+<h4>第二十一卷</h4>
+<p>再怎么混蛋，父母还是父母。</p>
+<p>Ever if it's wrongit's affection.</p>
+<h4>第二十二卷</h4>
+<p>是从何时开始呢？</p>
+<p>回过神来，已经能轻松地拜托朋友。</p>
+<p>Grow in my communication ability.</p>
+<h4>第二十三卷</h4>
+<p>不幸是由细枝末节的小事开始。</p>
+<p>I don't need anything special happily.</p>
+<h4>第二十四卷</h4>
+<p>根本没有天才。</p>
+<p>There is man who accomplished a great achievement.</p>
+<h4>第二十五卷</h4>
+<p>只要以七成的力量或者，人生就会一帆风顺。</p>
+<p>When challenging to exceed one hundred percent,it can grow.</p>
+<h4>第二十六卷</h4>
+<p>我踏出了一步，因为诸多幸运的加持，让我走完了自己的人生。</p>
+<p>不是每个人都会死，也不是每个人都很好运。</p>
+<p>要怎么做，是你的自由。</p>
+<p>I worked hard, lived hard, died happy. I was satisfied.</p>
+<h1>蛇足篇</h1>
+<h4>第一卷</h4>
+<p>旁人眼里波澜不惊的人生，于其本人而言，也可谓是波乱万丈。</p>
+<p>——It may look like a calm life, but it's hard.</p>
+<h2>漫画</h2>
+<h4>第一卷</h4>
+<p>眼前是悬崖。要往前踏出一步狠狠摔向地面，</p>
+<p>或者想裹足不前继续承受辱骂，都是你的自由。</p>
+<p>I do not want to work,whatever it may be said by whom.</p>
+<h4>第二卷</h4>
+<p>获得自由羽翼的人，将会失去双脚作为代价吧。</p>
+<p>It is difficult for inoccupation to attach a leg to the ground and to work.</p>
+<h4>第三卷</h4>
+<p>金钱名誉皆非必须，唯有觉悟才是。</p>
+<p>The resolution judged from a white eye from the world.</p>
+<h4>第四卷</h4>
+<p>我能轻松办到的事情，你无法办到；</p>
+<p>然而也有你才能轻易完成的事。如此而已。</p>
+<p>Since working is very difficult,please do not say simply.</p>
+<h4>第五卷</h4>
+<p>以言语开始的友情，十分脆弱易毁。</p>
+<p>Friendship is made with time and behabior.</p>
+<h4>第六卷</h4>
+<p>人人不同，每个人都好；人人相同，那就更好。</p>
+<p>It will not be blameed if it can be the same as everybody.</p>
+<h4>第七卷</h4>
+<p>懂得败北滋味的人，是强者。</p>
+<p>The way of daring to become inoccupation.</p>
+<h4>第八卷</h4>
+<p>新朋友未必是品行良善之人。</p>
+<p>I get away for the friend who doesn't have to be good man.</p>
+<h4>第九卷</h4>
+<p>并非每个人，都能够活得自由自在。</p>
+<p>The moment hope could be seen,it is the easiest to be thrust down into hell.</p>
+<h4>第十卷</h4>
+<p>要在女人面前耍猴戏是无所谓，但是要被当猴子耍可就完全免谈。</p>
+<p>Two dimensions are most as expected.</p>
+<h4>第十一卷</h4>
+<p>若想求苦，就往前行；如要寻乐，另去他方。</p>
+<p>True prosperity is ahead of the pain.</p>
+<h4>第十二卷</h4>
+<p>即使被人摆布、嘲笑，仍然会有所收获。</p>
+<p>When having to exert oneself,I have that.</p>
+<h4>第十三卷</h4>
+<p>唯有伸出手的人，才能摘得高岭之花。</p>
+<p>Only the person who brought up with affection can make a flower of a large wheelbloom.</p>
+<h4>第十四卷</h4>
+<p>狐假虎威之人，无需恐惧。</p>
+<p>It's unnecessary,I'm afraid.</p>
+<h4>第十五卷</h4>
+<p>有两处家乡者，会视何处为他乡？</p>
+<p>The home for you is the foreign land fo me.</p>
+<h4>第十六卷</h4>
+<p>即使如何努力，仍然会有无能为力的事。</p>
+<p>When there is also help by an impoosible thing by itself,it's got over.</p>
+<h4>第十七卷<h4>
+<p>结婚是人生的坟墓。</p>
+<p>Neet is zombie.</p>
+<h4>第十八卷（无台版）</h4>
+<p>衣食住的住可不单单是指睡觉用的床。</p>
+<p>Living means connecting with people and blending into the environment.</p>
+<h4>2,斩！赤红之瞳</h4>
+<p>1、这世间有着各种各样的意志。</p>
+<p>2、肮脏的角色由我们担任就好 一起改变世界吧 完成之后 消失就好。</p>
+<p>3、为了手无寸铁之人，天若无能制裁邪恶，我等将会于黑暗之中给予消逝。</p>
+<p>4、永远向前吧，我会守护你的。</p>
+<h2>其他</h2>
+<h4>fate</h4>
+<p>fa被人诟病的原因是剧情，好多人只是片面感动于吉尔(亢帅)对于贞德的苦苦追寻。对齐格十分看不起,认为他十分弱鸡，他的宝具，魔法，甚至是心脏也是别人送的。更让他们生气大概是圣女贞德与齐格的爱情。因为剧情对于二人爱情没有详细展现，相较于一直追寻守候的吉尔，齐格的爱显得有些薄弱，认为齐格有什么资格获得贞德的爱，还不如吉尔。但是听说过一句话没有，情不知所起，一往而深。齐格原本就是个连感情都很少的人造人，认识了齐格飞，贞德，阿福等人，才让他感觉到感情这种东西。齐格飞更是连自己的心都给了他，这对齐格产生了极大影响，他明白了为朋友牺牲，奉献。再是阿福，给了他朋友的温暖。贞德对于齐格的关怀原本好似一个姐姐关心弟弟,她心疼这个命运悲哀的少年，亦如多年前为法兰西征战的她一样。两颗狐寂的心就在一路的战斗，同生共死中逐渐靠近。最后的结局,贞德消亡回归英灵殿。齐格与她告别，相约再次相逢。而为了不让大圣杯给人类带来灾难，齐格激发齐格飞心脏里的法芙娜之血，变成了黑龙法芙娜，独自带着圣杯去往异界。齐格从一路的旅程中，从一圣杯去往异界。齐格从一路的旅程中，从一个机械般的人造人，逐渐变成一个有情感的活生生的人，最后成为了如同贞德般为了人类牺牲自己的英雄，还有与贞德间至死不渝的爱情，才是这部动画的闪光点。看完剧后，我对天草的坚持与无私由衷钦佩，但人类灵魂物质化这个想法还是太过理想主观，长远来看的话必然会打破平衡，引起新的问题。总的来说：没有一劳永逸。</p>而我对男主还挺喜欢的，没有反感，当你与齐格这个对人类和世界知之甚少的人造人站在同一角度思考时，你才会发现齐格的言行是合理甚至对他来说是最好的了。最后化龙飞向世界彼端的那<幕我印象最为深刻，独自飞向未知，不管恐惧与否，至少他相信自己是正确的，哪怕等待自己的是比死亡更可怕的，他也相信着人类。总的来说，我感觉天草和齐格没有质的区别，都是由外界因素产生自我认知而采取行动，为此牺牲一切的英雄。真的英雄，都是为了远大的目标而显露一时，然后默默退场的“无名”</p>
+	
+	
+</div>
+
+	<div>
+	<script src="js/jquery.min.js"></script>
+	<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css"/>
+	<script src="live2d-widget/autoload.js"></script>
+	<script src="js/12.js">
+	</div>
+
+</body>
+</html>
